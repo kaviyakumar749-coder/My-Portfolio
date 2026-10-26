@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kaviya K | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h2>Kaviya K.</h2>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <button id="themeBtn">🌙</button>
+</header>
+
+<section id="home" class="hero">
+    <p class="tag">WELCOME TO MY PORTFOLIO</p>
+    <h1>Hi, I'm <span>Kaviya K.</span></h1>
+    <h2>I am a <span id="typing"></span></h2>
+    <p>
+        I am a student passionate about coding,
+        designing and developing websites.
+    </p>
+    <a href="#projects" class="btn">Explore My Projects</a>
+</section>
+
+<section id="about">
+    <h2>About Me</h2>
+    <p>
+        I am a college student interested in web development.
+        I enjoy learning new technologies and building
+        useful and creative projects.
+    </p>
+
+    <h3>My Skills</h3>
+    <div class="skills">
+        <span>HTML</span>
+        <span>CSS</span>
+        <span>JavaScript</span>
+        <span>Java</span>
+        <span>C Programming</span>
+    </div>
+</section>
+
+<section id="projects">
+    <h2>My Projects</h2>
+
+    <div class="project-container">
+        <div class="card">
+            <h3>Student Portfolio</h3>
+            <p>A personal website to showcase my skills.</p>
+            <button onclick="showProject('Student Portfolio')">
+                View Details
+            </button>
+        </div>
+
+        <div class="card">
+            <h3>Personal Budget Tracker</h3>
+            <p>An application to manage income and expenses.</p>
+            <button onclick="showProject('Personal Budget Tracker')">
+                View Details
+            </button>
+        </div>
+
+        <div class="card">
+            <h3>Pharmacy Management</h3>
+            <p>A system for medicine stock and billing.</p>
+            <button onclick="showProject('Pharmacy Management')">
+                View Details
+            </button>
+        </div>
+    </div>
+</section>
+
+<section id="contact">
+    <h2>Contact Me</h2>
+    <form id="contactForm">
+        <input type="text" id="name"
+               placeholder="Your Name" required>
+
+        <input type="email" id="email"
+               placeholder="Your Email" required>
+
+        <textarea id="message"
+                  placeholder="Your Message" required></textarea>
+
+        <button type="submit" class="btn">Send Message</button>
+    </form>
+    <p id="response"></p>
+</section>
+
+<footer>
+    <p>© 2026 Kaviya K. | My Portfolio</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
